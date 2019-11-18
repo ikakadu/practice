@@ -1,0 +1,15 @@
+stages:
+  - build
+#  - test
+#job1:
+#  stage: test
+#  script:
+#  - sh test.sh
+#  artifacts:
+#    paths:
+#    - data_test/
+
+job2:
+  stage: build
+  script:
+  - echo 'suceed test' >> txt1
