@@ -4,6 +4,22 @@ public class Student {
 	private boolean flag=false;
 	private String name;
 	private int age;
+
+	public Student() {}
+	public Student(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return "Student{" +
+				"flag=" + flag +
+				", name='" + name + '\'' +
+				", age=" + age +
+				'}';
+	}
+
 	public synchronized void set(String name, int age) {
 		if(this.flag) {
 			try {
