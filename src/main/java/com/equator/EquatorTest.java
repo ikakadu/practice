@@ -1,4 +1,4 @@
-package com.it.equator;
+package com.equator;
 
 import com.equator.Equator;
 import com.equator.FieldBaseEquator;

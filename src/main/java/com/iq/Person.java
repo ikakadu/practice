@@ -3,6 +3,7 @@ package com.iq;
 import com.equator.NeedToCompare;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class Person implements Serializable{
 
@@ -16,7 +17,9 @@ public class Person implements Serializable{
 
 	@NeedToCompare
 	private int age;
-	
+
+	@NeedToCompare
+	List<Student> studentList;
 	
 	public int getId() {
 		return id;
