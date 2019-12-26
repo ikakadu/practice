@@ -1,5 +1,7 @@
 package com.iq;
 
+import com.equator.NeedToCompare;
+
 import java.io.Serializable;
 
 public class Person implements Serializable{
@@ -9,7 +11,10 @@ public class Person implements Serializable{
 	 */
 	private static final long serialVersionUID = 9036498163102180802L;
 	private int id;
+	@NeedToCompare
 	private String name;
+
+	@NeedToCompare
 	private int age;
 	
 	
