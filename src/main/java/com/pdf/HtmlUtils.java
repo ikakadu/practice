@@ -18,10 +18,10 @@ import java.util.Map;
  * @author shw
  * @create 2020-01-10
  **/
-@Slf4j
+//@Slf4j
 public class HtmlUtils {
 //    private static Logger LOGGER = LoggerFactory.getLogger(com.lagofx.mchtweb.util.HtmlUtils.class);
-
+    private static Logger log = LoggerFactory.getLogger(HtmlUtils.class);
     /**
      * 解析字符串模板,通用方法
      *

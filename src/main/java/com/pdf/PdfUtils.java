@@ -27,12 +27,13 @@ import java.util.zip.ZipOutputStream;
  * @author shw
  * @create 2020-01-10
  **/
-@Slf4j
+//@Slf4j
 public class PdfUtils {
     private static final String PDF = "PDF";
 
-//    private static Logger logger = LoggerFactory.getLogger(com.lagofx.mchtweb.util.pdf.PdfUtils.class);
 
+    //    private static Logger logger = LoggerFactory.getLogger(com.lagofx.mchtweb.util.pdf.PdfUtils.class);
+    private static Logger log = LoggerFactory.getLogger(PdfUtils.class);
     /**
      * html转换成pdf文件
      *

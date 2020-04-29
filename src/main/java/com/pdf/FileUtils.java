@@ -17,9 +17,9 @@ import java.util.Iterator;
  * @author shw
  * @create 2020-01-10
  **/
-@Slf4j
+//@Slf4j
 public class FileUtils {
-//	private static final Logger LOGGER = LoggerFactory.getLogger(com.lagofx.mchtweb.util.FileUtils.class);
+	private static Logger log = LoggerFactory.getLogger(FileUtils.class);
 
 	public static String ReadFile(String filePath) throws IOException{
 		return ReadFile(filePath, "UTF-8");

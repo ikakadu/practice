@@ -20,7 +20,7 @@ import java.util.List;
  * @DATE: 2019/11/25
  **/
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "/application.xml")
+//@ContextConfiguration(locations = "/application.xml")
 public class StudentTest {
     @Autowired
     @Qualifier("impl1")

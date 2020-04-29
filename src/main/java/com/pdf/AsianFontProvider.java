@@ -15,10 +15,10 @@ import org.slf4j.LoggerFactory;
  * @author shw
  * @create 2020-01-10
  **/
-@Slf4j
+
 public class AsianFontProvider extends XMLWorkerFontProvider {
 //    private Logger logger = LoggerFactory.getLogger(com.lagofx.mchtweb.util.pdf.AsianFontProvider.class);
-
+    Logger log = LoggerFactory.getLogger(getClass());
     @Override
     public Font getFont(final String fontname, final String encoding,
                         final boolean embedded, final float size, final int style,
