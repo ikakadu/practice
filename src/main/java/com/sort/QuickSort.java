@@ -7,9 +7,9 @@ public class QuickSort {
 	public static void main(String[] args) {
 		int[] arr = new int[]{6,2,8,12,5,3,8,1,4};
 		quickSort(arr,0,arr.length-1);
-		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i]+" ");
-		}
+//		for (int i = 0; i < arr.length; i++) {
+//			System.out.print(arr[i]+" ");
+//		}
 	}
 
 
