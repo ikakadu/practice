@@ -13,6 +13,7 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import org.apache.commons.lang3.time.DateFormatUtils;
 
+
 public class Producer {
     public final static String QUEUE_NAME="queue_demo";
     public final static String EXCHANGE_NAME="exchange_demo";

@@ -1,3 +1,4 @@
+/*
 package com.rabbitmq.two;
 
 
@@ -7,8 +8,14 @@ import com.rabbitmq.client.ConnectionFactory;
 
 import com.rabbitmq.client.QueueingConsumer;
 
+*/
+/**
+ * com.rabbitmq.amqp-client   <version>3.6.5</version>版本
+ *//*
+
+@Deprecated
 public class Consumer {
-    private final static String QUEUE_NAME = "rabbitMQ.test";
+    private final static String QUEUE_NAME = "queue_demo";
 
     
     public static void main(String[] argv) throws Exception {
@@ -34,3 +41,4 @@ public class Consumer {
     }
 
 }
+*/
