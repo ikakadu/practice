@@ -14,7 +14,9 @@ import com.rabbitmq.client.Connection;
 import org.apache.commons.lang3.time.DateFormatUtils;
 
 public class Producer {
-    public final static String QUEUE_NAME="rabbitMQ.test";
+    public final static String QUEUE_NAME="queue_demo";
+    public final static String EXCHANGE_NAME="exchange_demo";
+    public final static String ROUTING_KEY="routingkey_demo";
 
     public static void main(String[] args) throws IOException, TimeoutException {
         //创建连接工厂
@@ -29,8 +31,10 @@ public class Producer {
         Connection connection = factory.newConnection();
         //创建一个通道
         Channel channel = connection.createChannel();
+        channel.exchangeDeclare(EXCHANGE_NAME,"direct",true,false,null);
         //  声明一个队列        
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+        channel.queueBind(QUEUE_NAME,EXCHANGE_NAME,ROUTING_KEY);
         String time = DateFormatUtils.format(new Date(), "yyyy-MM-dd HH:mm:ss SSS");
         String message = "Hello RabbitMQ "+time;
         //发送消息到队列中
