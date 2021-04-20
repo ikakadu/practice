@@ -19,8 +19,8 @@ public class Customer {
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
  
-        factory.setHost("192.168.137.209");
-//      factory.setPort(15672);
+        factory.setHost("192.168.50.154");
+//      factory.setPort(15672);//15672是默认控制台端口
 //      factory.setPort(5672);
         factory.setUsername("admin");
         factory.setPassword("123456");
